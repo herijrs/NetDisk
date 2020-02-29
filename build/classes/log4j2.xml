@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="60">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT"> <!-- 定义类型为Console的Appender -->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%level] %c{1} - %msg%n"/> <!-- 定义类型为Pattern的Layout -->
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info"> <!-- 定义Root Logger，其日志级别为error -->
+            <AppenderRef ref="Console"/> <!-- Root Logger的Appender引用上面定义的Console -->
+        </Root>
+        
+        <!-- 第三方日志系统 -->
+        <logger name="org.springframework.core" level="info"/>
+        <logger name="org.springframework.beans" level="info"/>
+        <logger name="org.springframework.context" level="info"/>
+        <logger name="org.springframework.web" level="info"/>
+        <logger name="org.jboss.netty" level="warn"/>
+        <logger name="org.apache.http" level="warn"/>
+        <logger name="org.hibernate" level="warn"/>
+        
+        <Logger name="com.plants" level="warn" additivity="false"> 定义名字为com.plants的Logger，其日志级别为warn，additivity为false
+            <AppenderRef ref="Console"/> Root Logger的Appender引用上面定义的Console
+        </Logger>
+    </Loggers>
+</Configuration>
