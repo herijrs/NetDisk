@@ -13,6 +13,6 @@
  ----
  ### 示例
  #### 登陆页
- ![image](https://github.com/sorry17/NetDisk/blob/master/%E5%9B%BE%E7%89%871.png)
+ ![image](https://github.com/herijrs/NetDisk/blob/master/%E5%9B%BE%E7%89%871.png)
  #### 主页页
- ![image](https://github.com/sorry17/NetDisk/blob/master/%E5%9B%BE%E7%89%872.png)
+ ![image](https://github.com/herijs/NetDisk/blob/master/%E5%9B%BE%E7%89%872.png)
